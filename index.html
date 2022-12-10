@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="author" content="Ling Chan" />
+
+    <title>Ling Chan</title>
+    <!-- Classless CSS Stylesheet - https://oxal.org/projects/sakura/ -->
+    <link rel="stylesheet" href="./style.css" type="text/css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+  </head>
+
+  <body>
+    <!-- Menu -->
+    <header>
+      <nav class="nav">
+        <ul>
+          <li><a class="active" href="#home">Home</a></li>
+          <li><a href="#about">About me</a></li>
+          <li><a href="#EducationBackground">Education</a></li>
+          <li><a href="#ContactMe">Contact me</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <!-- Home -->
+    <main>
+      <section class="first-color" id="home">
+        <img width="500px" src="./IMG_3407.jpg" alt="garduate"/>
+        <br>
+        <p class="p-name">Ling Chan</p>
+        <br>
+        <p class="p-title">IT Auditor, Certified Public Accountant</p>
+        <br>
+        <div id="wrap">
+          <!-- resume -->
+          <a href="./LingChan-Resume.pdf" download class="btn">
+            <span class="circle"><i class="fa fa-download"></i></span>
+            <span class="title">Download</span>
+            <span class="title-hover">Click here</span>
+          </a>
+          <!-- coontact me -->
+          <a href="#ContactMe" class="btn2">
+            <span class="circle2"><i class="fa fa-arrow-right"></i></span>
+            <span class="title2">Contact me</span>
+            <span class="title-hover2">Click here</span>
+          </a>
+        </div>
+      </section>
+    </main>
+
+    <!-- About -->
+    <main>
+      <div class="second-color" id="about">
+        <h1>About me</h1>
+        <br>
+        <pre><strong>Email:</strong>                lchan94@myseneca.ca</pre>
+        <pre><strong>Student ID:</strong>       154953210</pre>
+        <pre><strong>Class Section:</strong>    NFF</pre>
+        <pre><strong>Instructor:</strong>         Mr. Mark Meritt</pre>
+        <pre><strong>Language:</strong>          English, Cantonese, Mandarin</pre>
+        <br><br>
+      
+        <h1>Academic Honesty</h1>
+        <br>
+        <p>
+          I declare that my assignment is wholly my own work in accordance with Seneca Academic
+          Policy. No part of this assignment has been copied manually or electronically from any
+          other source (including web sites) except for the information supplied by the WEB222
+          instructors and / or made available in this assignment for my use.<br /><br />
+          I also declare that no part of this assignment has been distributed to other students.
+        </p>
+        <pre><strong>Date:</strong>                  10 Dec 2022</pre>
+      </div>
+    </main>
+
+    <!-- Education -->
+    <main>
+      <div class="third-color" id="EducationBackground">
+        <h1>Education</h1>
+        <div class="button-container">
+          <a class="ebtn">
+            <i class="fa fa-university" style="font-size:24px"></i>
+            <br>
+            Senece College<br>
+            Computer Programming(Diploma)
+          </a>
+        </div>
+
+        <div class="button-container">
+          <a class="ebtn2">
+            <i class="fa fa-graduation-cap" style="font-size:24px"></i>
+            <br>
+            Curtin University<br>
+            Bachelor of Commerce (Accounting)
+          </a>
+        </div>
+        
+        <div class="button-container">
+          
+          <a class="ebtn3">
+            <i class="fa fa-graduation-cap" style="font-size:24px"></i>
+            <br>
+            HKU SPACE Po Leung Kuk Stanley Ho <br> 
+            Community College<br>
+            Higher Diploma In Accounting
+          </a>
+        </div>
+        
+
+
+      </div>
+    </main>
+
+    <!-- Contact me -->
+    <main>
+      <div class="fourth-color" id="ContactMe">
+        <h1>Contact me</h1>
+        <br>
+        <div class="container">
+          <form action="https://httpbin.org/post" class="contact-form" id="contact-form" method="POST">
+
+            <!-- name -->
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name" placeholder="Enter your name">
+        
+            <!-- email -->
+            <label for="email">Email</label>
+            <input type="text" id="email" name="email" placeholder="Enter your email">
+
+            <!-- address -->
+            <label for="address">Address</label>
+            <input type="text" id="address" name="address" cols="35" rows="2" placeholder="Enter your address">
+
+            <!-- provinces -->
+            <label for="provinces">Provinces and territories</label>
+            <select id="provinces" name="provinces">
+              <option value="al">Alberta</option>
+              <option value="bc">British Columbia</option>
+              <option value="ma">Manitoba</option>
+              <option value="nb">New Brunswick</option>
+              <option value="nl">Newfoundland and Labrador</option>
+              <option value="nt">Northwest Territories</option>
+              <option value="ns">Nova Scotia</option>
+              <option value="nu">Nunavut</option>
+              <option value="on">Ontario</option>
+              <option value="pe">Prince Edward Island</option>
+              <option value="qu">Quebec</option>
+              <option value="sa">Saskatchewan</option>
+              <option value="yu">Yukon</option>
+            </select>
+        
+            <!-- Postal Code -->
+            <label for="code">Postal Code</label>
+            <input name="pc" type="text" id="pc" placeholder="Enter your postal code">
+
+            <!-- Purpose of message -->
+            <br>
+            <div class="radio-btns">
+                <label for="purpose">Select your purpose of this message</label><br><br>
+                <input type="radio" id="question" name="purpose" value="question">
+                <label for="question">Question</label><br>
+                <input type="radio" id="comment" name="purpose" value="comment">
+                <label for="comment">Comment</label><br>
+                <input type="radio" id="hiring" name="purpose" value="hiring">
+                <label for="hiring">Hiring</label>
+            </div>
+            <br>
+
+            <!-- Message -->
+            <label for="msg">Message</label>
+            <textarea id="msg" name="msg" placeholder="Write your message" style="height:100px"></textarea>
+        
+            <!-- submit -->
+            <div class="submit-btns">
+              <input type="submit" value="Send" class="btn">
+              <input type="reset" value="Clear" class="btn">
+            </div>
+            <div id="error"></div>
+          </form>
+        </div>
+      </div>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+      <div class="footer-bottom">
+        <p class="p-footer">copyright &copy;2022. Designed by <span>Ling Chan</span></p>
+      </div>
+    </footer>
+  </body>
+
+  <!-- JavaScript Data Files -->
+  <script src="./app.js"></script>
+
+</html>
+
+
