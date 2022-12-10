@@ -1,0 +1,339 @@
+/*************** General ******************/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+.p-name {
+    text-align: center;
+    font-size: 40px;
+    font-weight: bold;
+    font-family: "Gill Sans", sans-serif;
+}
+
+h1,
+p,
+pre
+{
+    padding-left: 40px;
+    padding-right: 40px;
+}
+
+
+.p-title,
+p,
+pre
+{
+    margin-left: auto;
+    font-family: serif;
+}
+
+.p-title {
+    text-align: center;
+    font-size: 20px;
+}
+
+p,
+pre 
+{
+    font-size: 20px;
+}
+
+/*************** Menu ******************/
+header {
+    position: sticky;
+    padding: 20px;
+    background: white;
+    z-index: 1111;
+}
+
+ul {
+    list-style-type: none;
+    display: flex;
+
+}
+
+nav li {
+    padding: 5px 10px;
+    display: inline-block;
+    padding: 10px;
+    transition: all liner 0.5s;
+    margin-left: 20px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.5;
+
+}
+
+nav li a {
+    text-decoration: none;
+    color: black;
+    font-weight: 500;
+    padding: 5px;
+}
+
+/*************** Main page ******************/
+
+.first-color { 
+	background-color: #fae5ba; 
+    padding-top: 10rem;
+    padding-bottom: 7rem;
+    min-height: 600px;
+
+}
+
+img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 250px;
+    }
+
+/* Download button */
+#wrap
+{
+    margin: 20px auto;
+    text-align: center;
+    display: block;
+    height: 100%;
+}
+
+.btn, .btn2 {
+    position: relative;
+    display: inline-block;
+    height: 50px;
+    width: 200px;
+    line-height: 50px;
+    padding: 0;
+    border-radius: 50px;
+    background: #fdfdfd;
+    border: 2px solid #0099cc;
+    margin: 10px;
+    transition: .5s;
+}
+
+.btn2 {
+    border: 2px solid #efa666;
+}
+
+.btn:hover {
+    background-color: #0099cc;
+}
+
+.btn2:hover {
+    background-color: #efa666;
+}
+
+.btn:hover span.circle, .btn2:hover span.circle2 {
+    left: 100%;
+    margin-left: -45px;
+    background-color: #fdfdfd;
+    color: #0099cc;
+}
+
+.btn2:hover span.circle2 {
+    color: #efa666;
+}
+
+.btn:hover span.title, .btn2:hover span.title2 {
+    left: 40px;
+    opacity: 0;
+}
+
+.btn:hover span.title-hover, .btn2:hover span.title-hover2 {
+    opacity: 1;
+    left: 40px;
+}
+
+.btn span.circle, .btn2 span.circle2 {
+    display: block;
+    background-color: #0099cc;
+    color: #fff;
+    position: absolute;
+    float: left;
+    margin: 5px;
+    line-height: 42px;
+    height: 40px;
+    width: 40px;
+    top: 0;
+    left: 0;
+    transition: .5s;
+    border-radius: 50%;
+}
+
+.btn2 span.circle2 {
+    background-color: #efa666;
+}
+
+.btn span.title,
+  .btn span.title-hover, .btn2 span.title2,
+  .btn2 span.title-hover2 {
+    position: absolute;
+    left: 90px;
+    text-align: center;
+    margin: 0 auto;
+    font-size: 16px;
+    font-weight: bold;
+    color: #30abd5;
+    transition: .5s;
+}
+
+.btn2 span.title2,
+  .btn2 span.title-hover2 {
+    color: #efa666;
+    left: 80px;
+  }
+
+.btn span.title-hover, .btn2 span.title-hover2 {
+    left: 80px;
+    opacity: 0;
+}
+
+.btn span.title-hover, .btn2 span.title-hover2 {
+    color: #fff;
+}
+
+/*************** About Me ******************/
+.second-color { 
+	background-color: #f9ecd1; 
+    padding-top: 7rem;
+    padding-bottom: 7rem;
+    min-height: 600px;
+}
+
+/*************** Education ******************/
+.third-color { 
+	background-color: #fcf2de; 
+    padding-top: 7rem;
+    padding-bottom: 7rem;
+    min-height: 600px;
+}
+
+.button-container {
+    text-align: center;
+    margin-top: 100px;
+  }
+  
+  .ebtn, .ebtn2, .ebtn3 {
+    text-decoration: none;
+    font-family: 'Roboto';
+    text-transform: uppercase;
+    font-size: 14px;
+    letter-spacing: 1px;
+    font-weight: 600;
+    border-radius: 100px;
+    padding: 20px 50px;
+    transition-duration: .2s;
+    display: inline-block;
+    perspective: 1000px;
+    transform-origin: center bottom 0px;
+    transform: matrix(1, 0, 0, 1, 0, 0);
+  }
+
+  .ebtn {
+    color: #ed4c47;
+    background: #fff;
+    border: 1px solid #ed4c47;
+  }
+
+  .ebtn2 {
+    color: #ec810f;
+    background: #fff;
+    border: 1px solid #ec810f;
+  }
+
+  .ebtn3 {
+    color: #2d0fec;
+    background: #fff;
+    border: 1px solid #2d0fec;
+  }
+
+  .ebtn:hover {
+    background: #ed4c47;
+    color: white;
+  }
+
+  .ebtn2:hover {
+    background: #ec810f;
+    color: white;
+  }
+
+  .ebtn3:hover {
+    background: #2d0fec;
+    color: white;
+  }
+  
+  .pressed {
+    transform: matrix(0.95, 0, 0, 0.95, 0, 0);
+  }  
+
+/*************** Contact Me ******************/
+.fourth-color { 
+	background-color: #fbf6eb; 
+    padding-top: 7rem;
+    padding-bottom: 3rem;
+    min-height: 600px;
+}
+
+input[type=text], select, textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+}
+  
+input[type=submit] {
+    background-color: #04AA6D;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+  
+input[type=submit]:hover {
+    background-color: #45a049;
+}
+  
+.container {
+    border-radius: 5px;
+    padding-left: 40px;
+    padding-right: 40px;
+}
+
+.submit-btns {
+    margin-bottom: 50px;
+}
+
+#error pre {
+    color: #DF4759;
+    margin-bottom: 20px;
+    font-weight: 200;
+    padding: 0 15px;
+}
+
+#error {
+    background: #0F0119;
+    margin-bottom: 20px;
+}
+
+#error h3 {
+    color: #FFC18F;
+    margin-bottom: 20px;
+    padding: 15px 15px 0 15px;
+}
+
+/*************** foot ******************/
+.footer-bottom {
+    background-color:rgba(0, 0, 0, 0.2);
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+}
+
+.p-footer {
+    font-size: 15px;
+}
