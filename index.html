@@ -107,9 +107,6 @@
             Higher Diploma In Accounting
           </a>
         </div>
-        
-
-
       </div>
     </main>
 
@@ -189,14 +186,22 @@
             <br>
 
             <!-- message -->
-            <label for="msg">Message</label>
+            <label for="msg">Message to me</label>
             <input type="text"
             id="msg" 
             name="msg" 
             pattern=".{10,100}"
             placeholder="Within 10 to 100 characters" 
             required>
-        
+            <br>
+  
+            <!-- expected response method -->
+            <label for="method">Expected response method</label>
+            <select id="method" name="method">
+              <option value="phone">Phone call</option>
+              <option value="email">Email</option>
+            </select>
+
             <!-- submit -->
             <div class="submit-btns">
               <input type="submit" value="Submit" class="btn">
