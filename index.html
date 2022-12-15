@@ -36,13 +36,13 @@
         <div id="wrap">
           <!-- resume -->
           <a href="./LingChan-Resume.pdf" download class="btn">
-            <span class="circle"><i class="fa fa-download"></i></span>
+            <span class="circle"><em class="fa fa-download"></em></span>
             <span class="title">Download</span>
             <span class="title-hover">Click here</span>
           </a>
           <!-- coontact me -->
           <a href="#ContactMe" class="btn2">
-            <span class="circle2"><i class="fa fa-arrow-right"></i></span>
+            <span class="circle2"><em class="fa fa-arrow-right"></em></span>
             <span class="title2">Contact me</span>
             <span class="title-hover2">Click here</span>
           </a>
@@ -81,7 +81,7 @@
         <h1>Education</h1>
         <div class="button-container">
           <a class="ebtn">
-            <i class="fa fa-university" style="font-size:24px"></i>
+            <em class="fa fa-university" style="font-size:24px"></em>
             <br>
             Senece College<br>
             Computer Programming(Diploma)
@@ -90,7 +90,7 @@
 
         <div class="button-container">
           <a class="ebtn2">
-            <i class="fa fa-graduation-cap" style="font-size:24px"></i>
+            <em class="fa fa-graduation-cap" style="font-size:24px"></em>
             <br>
             Curtin University<br>
             Bachelor of Commerce (Accounting)
@@ -100,7 +100,7 @@
         <div class="button-container">
           
           <a class="ebtn3">
-            <i class="fa fa-graduation-cap" style="font-size:24px"></i>
+            <em class="fa fa-graduation-cap" style="font-size:24px"></em>
             <br>
             HKU SPACE Po Leung Kuk Stanley Ho <br> 
             Community College<br>
@@ -119,19 +119,34 @@
         <h1>Contact me</h1>
         <br>
         <div class="container">
-          <form action="https://httpbin.org/post" class="contact-form" id="contact-form" method="POST">
+          <form action="https://httpbin.org/post" class="form" id="form" method="POST">
 
             <!-- name -->
             <label for="name">Name</label>
-            <input type="text" id="name" name="name" placeholder="Enter your name">
+            <input type="text" 
+            id="name" name="name" 
+            placeholder="Maximum 15 characters" 
+            pattern="[a-z]{1,15}" 
+            required>
         
             <!-- email -->
             <label for="email">Email</label>
-            <input type="text" id="email" name="email" placeholder="Enter your email">
+            <input type="text" 
+            id="email" 
+            placeholder="e.g. sample@sample.com" 
+            pattern="[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$" 
+            required>
 
             <!-- address -->
             <label for="address">Address</label>
-            <input type="text" id="address" name="address" cols="35" rows="2" placeholder="Enter your address">
+            <input type="text" 
+            id="address" 
+            name="address" 
+            cols="35" 
+            rows="2" 
+            pattern=".{10,}"
+            placeholder="Minimum 10 characters" 
+            required>
 
             <!-- provinces -->
             <label for="provinces">Provinces and territories</label>
@@ -151,11 +166,16 @@
               <option value="yu">Yukon</option>
             </select>
         
-            <!-- Postal Code -->
+            <!-- postal code -->
             <label for="code">Postal Code</label>
-            <input name="pc" type="text" id="pc" placeholder="Enter your postal code">
+            <input name="pc" 
+            type="text" 
+            id="pc"
+            pattern="[A-Za-z]\d[A-Za-z][ -]?\d[A-Za-z]\d$" 
+            placeholder="e.g. M2J 2X5" 
+            required>
 
-            <!-- Purpose of message -->
+            <!-- purpose of message -->
             <br>
             <div class="radio-btns">
                 <label for="purpose">Select your purpose of this message</label><br><br>
@@ -168,16 +188,20 @@
             </div>
             <br>
 
-            <!-- Message -->
+            <!-- message -->
             <label for="msg">Message</label>
-            <textarea id="msg" name="msg" placeholder="Write your message" style="height:100px"></textarea>
+            <input type="text"
+            id="msg" 
+            name="msg" 
+            pattern=".{10,100}"
+            placeholder="Within 10 to 100 characters" 
+            required>
         
             <!-- submit -->
             <div class="submit-btns">
-              <input type="submit" value="Send" class="btn">
-              <input type="reset" value="Clear" class="btn">
+              <input type="submit" value="Submit" class="btn">
+              <input type="reset" value="Reset" class="btn">
             </div>
-            <div id="error"></div>
           </form>
         </div>
       </div>
