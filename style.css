@@ -13,6 +13,7 @@
     font-family: "Gill Sans", sans-serif;
 }
 
+/*
 h1,
 p,
 pre
@@ -20,7 +21,7 @@ pre
     padding-left: 40px;
     padding-right: 40px;
 }
-
+*/
 
 .p-title,
 p,
@@ -80,7 +81,8 @@ nav li a {
     padding-top: 10rem;
     padding-bottom: 7rem;
     min-height: 600px;
-
+    padding-left: 40px;
+    padding-right: 40px;
 }
 
 img {
@@ -201,6 +203,8 @@ img {
     padding-top: 5rem;
     padding-bottom: 7rem;
     min-height: 600px;
+    padding-left: 40px;
+    padding-right: 40px;
 }
 
 /*************** Education ******************/
@@ -209,6 +213,8 @@ img {
     padding-top: 5rem;
     padding-bottom: 7rem;
     min-height: 600px;
+    padding-left: 40px;
+    padding-right: 40px;
 }
 
 .button-container {
@@ -276,12 +282,16 @@ img {
     padding-bottom: 3rem;
     min-height: 600px;
     border-radius: 5px;
+    padding-left: 40px;
+    padding-right: 40px;
 }
 
+/*
 .container {
     padding-left: 40px;
     padding-right: 40px;
 }
+*/
 
 input[type=text], select, textarea {
     width: 100%;
