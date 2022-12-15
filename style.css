@@ -276,6 +276,9 @@ img {
     padding-bottom: 3rem;
     min-height: 600px;
     border-radius: 5px;
+}
+
+.container {
     padding-left: 40px;
     padding-right: 40px;
 }
