@@ -88,6 +88,7 @@ img {
     margin-left: auto;
     margin-right: auto;
     width: 250px;
+    border-radius: 50%;
     }
 
 /* Download button */
@@ -197,7 +198,7 @@ img {
 /*************** About Me ******************/
 .second-color { 
 	background-color: #f9ecd1; 
-    padding-top: 7rem;
+    padding-top: 5rem;
     padding-bottom: 7rem;
     min-height: 600px;
 }
@@ -205,7 +206,7 @@ img {
 /*************** Education ******************/
 .third-color { 
 	background-color: #fcf2de; 
-    padding-top: 7rem;
+    padding-top: 5rem;
     padding-bottom: 7rem;
     min-height: 600px;
 }
@@ -271,9 +272,12 @@ img {
 /*************** Contact Me ******************/
 .fourth-color { 
 	background-color: #fbf6eb; 
-    padding-top: 7rem;
+    padding-top: 5rem;
     padding-bottom: 3rem;
     min-height: 600px;
+    border-radius: 5px;
+    padding-left: 40px;
+    padding-right: 40px;
 }
 
 input[type=text], select, textarea {
@@ -285,11 +289,14 @@ input[type=text], select, textarea {
     margin-top: 6px;
     margin-bottom: 16px;
     resize: vertical;
+    font-size: 15px;
 }
-  
+
+/* submit */
 input[type=submit] {
     background-color: #04AA6D;
     color: white;
+    font-size: 15px;
     border: none;
     border-radius: 4px;
     cursor: pointer;
@@ -298,33 +305,19 @@ input[type=submit] {
 input[type=submit]:hover {
     background-color: #45a049;
 }
+
+/* reset */
+input[type=reset] {
+    background-color: #0441aa;
+    color: white;
+    font-size: 15px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
   
-.container {
-    border-radius: 5px;
-    padding-left: 40px;
-    padding-right: 40px;
-}
-
-.submit-btns {
-    margin-bottom: 50px;
-}
-
-#error pre {
-    color: #DF4759;
-    margin-bottom: 20px;
-    font-weight: 200;
-    padding: 0 15px;
-}
-
-#error {
-    background: #0F0119;
-    margin-bottom: 20px;
-}
-
-#error h3 {
-    color: #FFC18F;
-    margin-bottom: 20px;
-    padding: 15px 15px 0 15px;
+input[type=reset]:hover {
+    background-color: #0f038f;
 }
 
 /*************** foot ******************/
